@@ -19,6 +19,9 @@ namespace SQQQ
             List<string> Params = new List<string>();
             List<string> Types = new List<string>();
 
+            Params.Add("id");
+            Types.Add("int");
+
             string param;
             string type;
             for(int i=0; i<100; i++)
