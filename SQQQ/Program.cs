@@ -66,7 +66,7 @@ namespace SQQQ
             proc_ins += ")\n select SCOPE_IDENTITY()\n go";
 
             string proc_del = "create procedure [" + Name + "_del]\n @"+ Params[0] + " " + Types[0] +"\n as" +
-                "\n delete from "+ Name + "where " + Params[0] + "= @" + Params[0] + "\n select SCOPE_IDENTITY()\n go";
+                "\n delete from "+ Name + " where " + Params[0] + "= @" + Params[0] + "\n select SCOPE_IDENTITY()\n go";
 
 
             string proc_upd = "create procedure [" + Name + "_upd]\n";
